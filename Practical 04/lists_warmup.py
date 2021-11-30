@@ -32,14 +32,16 @@ def main():
     print("Mutations:")
     print(f"Change the first element of numbers to 'ten' (the string, not the number 10): numbers[0] = 'ten'")
     numbers[0] = "ten"
-    print(f"                                     Change the last element of numbers to 1: numbers[-1] = 1")
+    print(numbers)
+    print(f"Change the last element of numbers to 1: numbers[-1] = 1")
     numbers[-1] = 1
-    print(f"              Get all the elements from numbers except the first two (slice): numbers[2:]")
+    print(numbers)
+    print(f"Get all the elements from numbers except the first two (slice): numbers[2:]")
     new_number_list = numbers[2:]
     print(new_number_list)
-    print(f"                                         Check if 9 is an element of numbers: 9 in numbers")
+    print(f"Check if 9 is an element of numbers: 9 in numbers")
     check_9_in_numbers = 9 in numbers
-    print(check_9_in_numbers, f"Expected: {9 in numbers}")
+    print(check_9_in_numbers, f"(Expected: {9 in numbers})")
     print(BORDER)
 
 
