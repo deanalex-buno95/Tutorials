@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="06e1d2c9-1e38-46cb-969d-883387413e1a" name="Default Changelist" comment="" />
+    <list default="true" id="06e1d2c9-1e38-46cb-969d-883387413e1a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Practical 04/subject_data.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Practical 04/subject_reader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,7 +29,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
-  <component name="RunManager" selected="Python.total_income">
+  <component name="RunManager" selected="Python.subject_reader">
     <configuration name="lists_warmup" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="02_Tutorials" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -40,6 +44,25 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Practical 04/lists_warmup.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="subject_reader" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="02_Tutorials" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Practical 04" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Practical 04/subject_reader.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -69,11 +92,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.subject_reader" />
+        <item itemvalue="Python.subject_reader" />
+        <item itemvalue="Python.subject_reader" />
         <item itemvalue="Python.total_income" />
         <item itemvalue="Python.total_income" />
-        <item itemvalue="Python.total_income" />
-        <item itemvalue="Python.lists_warmup" />
-        <item itemvalue="Python.lists_warmup" />
       </list>
     </recent_temporary>
   </component>
@@ -86,6 +109,7 @@
       <option name="presentableId" value="Default" />
       <updated>1638266714713</updated>
       <workItem from="1638266716415" duration="3500000" />
+      <workItem from="1638320099429" duration="1216000" />
     </task>
     <task id="LOCAL-00001" summary="Fix issues…">
       <created>1638266770474</created>
@@ -108,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638277320379</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Completed P4Q2 (finally).">
+      <created>1638320242598</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1638320242599</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,11 +155,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fix issues…" />
     <MESSAGE value="Completed P4Q1." />
     <MESSAGE value="Completed P4Q2." />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed P4Q2." />
+    <MESSAGE value="Completed P4Q2 (finally)." />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed P4Q2 (finally)." />
   </component>
 </project>
