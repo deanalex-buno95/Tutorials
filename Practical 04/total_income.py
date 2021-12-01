@@ -69,7 +69,7 @@ def get_income(month):
     run = 0
     while run != SENTINEL:
         try:
-            income = float(input(f"Enter income for month {month}: "))
+            income = float(input(f"Enter income for month {month}: $"))
             if income >= 0:
                 return income
             else:
