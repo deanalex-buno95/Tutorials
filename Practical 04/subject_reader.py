@@ -16,6 +16,9 @@ FUNCTIONS
 
 def main():
     """ The main function to output data from 'subject_data.txt' """
+    print(BORDER)
+    print("Practical 4: Question 3\nsubject_reader.py")
+    print(BORDER)
     data = get_data()
     display_data(data)
 

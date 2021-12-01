@@ -17,7 +17,7 @@ FUNCTIONS
 def main():
     """ Main function for 2 list exercises """
     print(BORDER)
-    print("Practical 4: Question 5\nlist_exercises.py")
+    print("Practical 4: Question 4\nlist_exercises.py")
     print(BORDER)
     print("Part 1:")
     number_list = get_list_of_numbers()
