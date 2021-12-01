@@ -21,6 +21,7 @@ def main():
     print(BORDER)
     data = get_data()
     display_data(data)
+    print(BORDER)
 
 
 def get_data():
