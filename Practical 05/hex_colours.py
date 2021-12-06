@@ -5,7 +5,8 @@ hex_colours.py
 
 # CONSTANTS
 BORDER = "—" * 150
-CODE_TO_NAME = {}
+CODE_TO_NAME = {"Red": "FF0000", "Orange": "FFA500", "Yellow": "FFFF00", "Lime": "00FF00", "Green": "008000",
+                "Teal": "008080", "Blue": "0000FF", "Purple": "800080", "Magenta": "FF00FF", "Pink": "FFC0CB"}
 
 
 """
