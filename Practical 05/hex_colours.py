@@ -15,9 +15,17 @@ MAIN FUNCTION
 
 
 def main():
-    """ Main function to get colour name from colour code input from dictionary 'NAME_TO_CODE' """
+    """ Main function to get colour code from colour name input from dictionary 'NAME_TO_CODE' """
     print(BORDER)
     print("Practical 5: Question 2\nhex_colours.py")
+    print(BORDER)
+    colour_name = input("Name a colour: ").title()
+    while colour_name != "":
+        if colour_name in NAME_TO_CODE:
+            print(f"{colour_name}: #{NAME_TO_CODE[colour_name]}")
+        else:
+            print("Invalid colour name!")
+        colour_name = input("Name a colour: ").title()
     print(BORDER)
 
 
