@@ -27,6 +27,10 @@ def main():
             print("Invalid short state")
         state_code = input("Enter short stage: ").upper()
     print(BORDER)
+    print("Part 2")
+    for short_state in CODE_TO_NAME:
+        print("{0:3} is {1:}".format(short_state, CODE_TO_NAME[short_state]))
+    print(BORDER)
 
 
 """
