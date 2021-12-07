@@ -5,6 +5,7 @@ emails.py
 
 # CONSTANTS
 BORDER = "—" * 150
+SENTINEL = -1
 
 
 """
@@ -17,6 +18,27 @@ def main():
     print(BORDER)
     print("Practical 5: Question 4\nemails.py")
     print(BORDER)
+    run = 0
+    email_dictionary = {}
+    while run != SENTINEL:
+        user_email = get_email()
+    print(BORDER)
+
+
+"""
+OTHER FUNCTIONS
+"""
+
+
+def get_email():
+    """ Get email from user """
+    run = 0
+    while run != SENTINEL:
+        user_email = input("Email: ")
+        if "@" in user_email or user_email == "":
+            return user_email
+        else:
+            print("Invalid input! Try again!")
 
 
 """
