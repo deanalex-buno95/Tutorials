@@ -22,6 +22,10 @@ def main():
     email_dictionary = {}
     while run != SENTINEL:
         user_email = get_email()
+        if user_email == "":
+            run = SENTINEL
+        else:
+            user_name = get_name(user_email)
     print(BORDER)
 
 
@@ -39,6 +43,11 @@ def get_email():
             return user_email
         else:
             print("Invalid input! Try again!")
+
+
+def get_name(user_email):
+    """ Get name from the email of the user """
+    pass
 
 
 """
