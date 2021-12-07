@@ -38,7 +38,7 @@ def get_email():
     """ Get email from user """
     run = 0
     while run != SENTINEL:
-        user_email = input("Email: ")
+        user_email = input("Email: ").lower()
         if "@" in user_email or user_email == "":
             return user_email
         else:
@@ -47,7 +47,10 @@ def get_email():
 
 def get_name(user_email):
     """ Get name from the email of the user """
-    pass
+    name, domain = user_email.split("@")
+    user_name = name.replace(".", " ")
+    user_name = user_name.title()
+    return user_name
 
 
 """
