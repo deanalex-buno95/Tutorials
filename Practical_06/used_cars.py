@@ -30,13 +30,17 @@ def main():
     print("Car {}, {}".format(my_car.fuel, my_car.odometer))
     print("Car {self.fuel}, {self.odometer}".format(self=my_car))
     print(BORDER)
-    print("My modifications:")
+    print("My first modifications:")
     limo = Car(100)  # `Car` object, `limo`, initialized with 100 units of fuel (1)
     limo.add_fuel(20)  # `limo` with 20 units of fuel added (2)
     print(f"fuel = {limo.fuel}")  # `limo` with 120 units of fuel (3)
     limo.drive(115)  # `limo` drove 115km (4)
     print(f"odo = {limo.odometer}")  # `limo` have `odometer` value of 115 (5)
     print(limo)  # print `limo` information [__str__ method] (6)
+    print(BORDER)
+    print("My second modifications:")
+    bumblebee_camaro = Car(140, "Bumblebee Camaro")  # `Car` object with `Car.name` field added (7)
+    print(bumblebee_camaro)  # print `Car` object (8)
     print(BORDER)
 
 
