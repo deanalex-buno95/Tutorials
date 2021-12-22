@@ -33,9 +33,3 @@ class ProgrammingLanguage:
         Check if the Programming Language is 'Dynamic'
         """
         return self.typing == "Dynamic"
-
-    def __str__(self):
-        """
-        Display Programming Language
-        """
-        return f"{self.name}, {self.typing} Typing, Reflection={self.reflection}, First appeared in {self.year}"
