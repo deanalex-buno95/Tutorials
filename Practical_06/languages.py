@@ -29,6 +29,12 @@ def main():
     for language in languages_list:
         print(language)
     print(BORDER)
+    print("Part 2:")
+    print("The dynamically typed languages are:")
+    for language in languages_list:
+        if language.is_dynamic():
+            print(language.name)
+    print(BORDER)
 
 
 if __name__ == '__main__':
