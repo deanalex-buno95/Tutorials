@@ -18,9 +18,16 @@ PROGRAM
 
 
 def main():
+    print(BORDER)
+    print("Practical 6: Question 2\nprogramming_language.py & languages.py")
+    print(BORDER)
     ruby = ProgrammingLanguage("Ruby", "Dynamic", True, 1995)
     python = ProgrammingLanguage("Python", "Dynamic", True, 1991)
     visual_basic = ProgrammingLanguage("Visual Basic", "Static", False, 1991)
+    languages_list = [ruby, python, visual_basic]
+    for language in languages_list:
+        print(language)
+    print(BORDER)
 
 
 if __name__ == '__main__':
