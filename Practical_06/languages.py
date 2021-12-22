@@ -21,6 +21,7 @@ def main():
     print(BORDER)
     print("Practical 6: Question 2\nprogramming_language.py & languages.py")
     print(BORDER)
+    print("Part 1:")
     ruby = ProgrammingLanguage("Ruby", "Dynamic", True, 1995)
     python = ProgrammingLanguage("Python", "Dynamic", True, 1991)
     visual_basic = ProgrammingLanguage("Visual Basic", "Static", False, 1991)
