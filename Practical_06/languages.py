@@ -18,6 +18,7 @@ PROGRAM
 
 
 def main():
+    """ Test code for languages """
     print(BORDER)
     print("Practical 6: Question 2\nprogramming_language.py & languages.py")
     print(BORDER)
