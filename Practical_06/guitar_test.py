@@ -1,5 +1,5 @@
 """
-Practical 3B:
+Practical 6: Question 3B
 guitar_test.py
 """
 
