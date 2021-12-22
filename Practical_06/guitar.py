@@ -41,4 +41,4 @@ class Guitar:
         """
         Display `Guitar` object information
         """
-        return f"{self.name} ({self.year}) : ${self.cost}"
+        return f"{self.name} ({self.year}) : ${self.cost:.2f}"
