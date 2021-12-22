@@ -36,6 +36,7 @@ def main():
     print(f"fuel = {limo.fuel}")  # `limo` with 120 units of fuel (3)
     limo.drive(115)  # `limo` drove 115km (4)
     print(f"odo = {limo.odometer}")  # `limo` have `odometer` value of 115 (5)
+    print(limo)  # print `limo` information [__str__ method] (6)
     print(BORDER)
 
 
