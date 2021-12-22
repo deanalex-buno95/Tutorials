@@ -44,6 +44,4 @@ class Car:
         Display `Car` information
         Format: "`Car`, fuel=`fuel`, odometer=`odometer`"
         """
-        print(f"{self.name}, fuel={self.fuel}, odometer={self.odometer}")
-
-
+        return f"{self.name}, fuel={self.fuel}, odometer={self.odometer}"
