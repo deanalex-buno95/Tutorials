@@ -13,7 +13,7 @@ class Guitar:
     """
     Represent a `Guitar` object
     """
-    def __init__(self, name="", year=0, cost=0):
+    def __init__(self, name="", year=0, cost=0.0):
         """
         Instance of a `Guitar` object
         Parameters:
