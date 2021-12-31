@@ -25,7 +25,7 @@ class SquareNumberApp(App):
             result = float(value) ** 2
             self.root.ids.output_label.text = str(result)
         except ValueError:
-            pass
+            print("Invalid input!")
 
 
 SquareNumberApp().run()
