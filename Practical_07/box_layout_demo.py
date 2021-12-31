@@ -1,3 +1,8 @@
+"""
+Practical 7: Question 1
+box_layout_demo
+"""
+
 from kivy.app import App
 from kivy.lang import Builder
 
@@ -14,6 +19,8 @@ class BoxLayoutDemo(App):
 
     def handle_clear(self):
         print('clear')
+        self.root.ids.input_name.text = ""
+        self.root.ids.output_label.text = "Enter your name"
 
 
 BoxLayoutDemo().run()
