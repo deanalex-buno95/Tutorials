@@ -7,14 +7,20 @@ BoxLayout:
             text: '34'
             font_size: 48
             multiline: False
+            on_text: app.handle_calculate()
         BoxLayout:
             orientation: 'vertical'
             Button:
                 text: 'Up'
+                on_press: app.handle_increment(1)
             Button:
                 text: 'Down'
-    Button:
-        text: "Convert mi to km"
+                on_press: app.handle_increment(-1)
+#    Button:
+#        text: 'Convert mi to km'
+#        on_press: app.handle_calculate()
     Label:
         id: value_in_km
+        text: '54.71756'
+        font_size: 48
         color: (1, 1, 0, 1)
