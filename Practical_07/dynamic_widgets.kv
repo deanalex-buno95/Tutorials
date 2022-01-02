@@ -1,0 +1,35 @@
+BoxLayout:
+    orientation: 'vertical'
+
+    BoxLayout:  # dynamic widgets & inputs
+        orientation: 'horizontal'
+        BoxLayout:
+            orientation: 'vertical'
+            id: item_list
+        BoxLayout:
+            orientation: 'vertical'
+            size_hint_x: 0.4
+            Label:
+                text: 'Name:'
+            TextInput:
+                id: item_name
+                multiline: False
+            Label:
+                text: 'Price ($):'
+            TextInput:
+                id: item_cost
+                multiline: False
+
+    Label:  # label
+        size_hint_y: 0.1
+        text: app.status_text
+
+    BoxLayout:  # static widgets
+        orientation: 'horizontal'
+        size_hint_y: 0.2
+        Button:  # add a new item
+            text: "Create New Widget"
+            on_release: app.create_new_item()
+        Button:  # clear out all items
+            text: "Clear Widgets"
+            on_release: app.clear_all_items()
