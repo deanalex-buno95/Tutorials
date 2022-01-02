@@ -29,7 +29,7 @@ BoxLayout:
         size_hint_y: 0.2
         Button:  # add a new item
             text: 'Add new item'
-            on_release: app.create_new_item()
+            on_release: app.add_new_item(item_name.text, item_cost.text)
         Button:  # clear out all items
             text: 'Clear all items'
             on_release: app.clear_all_items()
