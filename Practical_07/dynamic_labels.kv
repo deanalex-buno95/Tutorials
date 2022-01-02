@@ -1,0 +1,32 @@
+BoxLayout:
+    orientation: 'vertical'
+
+    BoxLayout:  # name list and name input
+        orientation: 'horizontal'
+        BoxLayout:
+            orientation: 'vertical'
+            id: name_list
+        BoxLayout:
+            orientation: 'vertical'
+            Label:
+                text: 'Name'
+                color: (0, 0, 1, 1)
+                font_size: 48
+            TextInput:
+                id: new_name
+                multiline: False
+
+    Label:  # status
+        size_hint_y: 0.1
+        text: app.status_text
+        color: (1, 1, 0, 1)
+
+    BoxLayout:  # button functionality
+        orientation: 'horizontal'
+        size_hint_y: 0.2
+        Button:
+            text: 'Add Name'
+            on_release: app.add_name(new_name.text)
+        Button:
+            text: 'Clear Names'
+            on_release: app.clear_names()
