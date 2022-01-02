@@ -1,0 +1,20 @@
+BoxLayout:
+    orientation: 'vertical'
+    BoxLayout:
+        orientation: 'horizontal'
+        TextInput:
+            id: value_in_mi
+            text: '34'
+            font_size: 48
+            multiline: False
+        BoxLayout:
+            orientation: 'vertical'
+            Button:
+                text: 'Up'
+            Button:
+                text: 'Down'
+    Button:
+        text: "Convert mi to km"
+    Label:
+        id: value_in_km
+        color: (1, 1, 0, 1)
