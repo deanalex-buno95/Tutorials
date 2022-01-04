@@ -24,7 +24,7 @@ class SilverServiceTaxi(Taxi):
         """
         Return the price for the SilverServiceTaxi trip.
         """
-        return self.price_per_km * self.current_fare_distance + self.flagfall
+        return super().get_fare() + self.flagfall
 
     def __str__(self):
         """
