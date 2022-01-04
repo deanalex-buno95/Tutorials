@@ -10,7 +10,7 @@ class Car:
 
     def __init__(self, name="Car", fuel=0):
         """
-        Initialise a Car.
+        Initialize a Car.
         """
         self.name = name
         self.fuel = fuel
