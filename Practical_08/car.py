@@ -5,11 +5,6 @@ Car class
 """
 
 
-"""
-CLASSES AND FUNCTIONS
-"""
-
-
 class Car:
     """Represent a Car object."""
 
