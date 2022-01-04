@@ -34,7 +34,7 @@ class Taxi(Car):
     def drive(self, distance):
         """
         Drive the Taxi the same way as the Car,
-        but also calculate the fare distance as well
+        but also calculate the fare distance as well.
         """
         distance_driven = super().drive(distance)
         self.current_fare_distance += distance_driven
