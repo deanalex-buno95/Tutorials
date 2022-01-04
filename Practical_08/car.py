@@ -1,6 +1,7 @@
 """
-Practical 6: Question 1A
+Practical 8: Question 1A
 car.py
+Car class
 """
 
 
