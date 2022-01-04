@@ -8,13 +8,13 @@ Car class
 class Car:
     """Represent a Car object."""
 
-    def __init__(self, fuel=0, name="Car"):
+    def __init__(self, name="Car", fuel=0):
         """
         Initialise a Car.
         """
+        self.name = name
         self.fuel = fuel
         self.odometer = 0
-        self.name = name
 
     def add_fuel(self, amount):
         """
