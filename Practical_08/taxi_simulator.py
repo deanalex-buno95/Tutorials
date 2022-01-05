@@ -101,7 +101,7 @@ def choose_taxi(taxi_list):
 
 
 def drive_taxi(taxi):
-    """ Drive the current taxi """
+    """ Drive the current taxi. """
     run = 0
     while run != SENTINEL:
         try:
