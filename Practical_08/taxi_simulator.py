@@ -105,7 +105,7 @@ def drive_taxi(taxi):
     run = 0
     while run != SENTINEL:
         try:
-            distance = float(input("How far will the drive be?: "))
+            distance = float(input("Distance of the drive (in kilometers): "))
             if distance >= 0:
                 taxi.drive(distance)
                 run = SENTINEL
