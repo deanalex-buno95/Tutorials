@@ -9,49 +9,15 @@ import os
 
 
 def main():
-    """Demo os module functions."""
+    """Main function for cleaning up file names."""
+
+    # Starting directory
     print("Starting directory is: {}".format(os.getcwd()))
 
     # Change to desired directory
-    os.chdir('Lyrics/Christmas')
+    os.chdir("Lyrics")
 
-    # Print a list of all files in current directory
-    print("Files in {}:\n{}\n".format(os.getcwd(), os.listdir('.')))
-
-    # Make a new directory
-    # The next time you run this, it will crash if the directory exists
-    # Use exception handling to avoid the crash (just pass)
-    try:
-        os.mkdir('temp')
-    except FileExistsError:
-        pass
-
-    # Loop through each file in the (current) directory
-    for filename in os.listdir('.'):
-        # Ignore directories, just process files
-        if os.path.isdir(filename):
-            continue
-
-        new_name = get_fixed_filename(filename)
-        print("Renaming {} to {}".format(filename, new_name))
-
-        # Try these options one at a time
-        # Option 1: rename file to new name - in place
-        # os.rename(filename, new_name)
-
-        # Option 2: move file to new place, with new name
-        # shutil.move(filename, 'temp/' + new_name)
-
-
-def get_fixed_filename(filename):
-    """Return a 'fixed' version of filename."""
-    new_name = filename.replace(" ", "_").replace(".TXT", ".txt")
-    return new_name
-
-
-def demo_walk():
-    """Process all subdirectories using os.walk()."""
-    os.chdir('Lyrics')
+    # Walk
     for directory_name, subdirectories, filenames in os.walk('.'):
         print("Directory:", directory_name)
         print("\tcontains subdirectories:", subdirectories)
@@ -64,5 +30,10 @@ def demo_walk():
             os.rename(full_name, new_name)
 
 
+def get_fixed_filename(filename):
+    """Return a 'fixed' version of filename."""
+    new_name = filename.replace(" ", "_").replace(".TXT", ".txt")
+    return new_name
+
+
 # main()
-# demo_walk()
