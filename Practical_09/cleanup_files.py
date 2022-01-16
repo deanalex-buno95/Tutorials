@@ -34,7 +34,10 @@ def main():
         """
         for filename in filenames:
             fixed_filename = get_fixed_filename(filename)
-            print(f"{filename}          {fixed_filename}")
+            # print(f"{filename}          {fixed_filename}")
+            old_file_name = os.path.join(directory_name, filename)
+            new_file_name = os.path.join(directory_name, fixed_filename)
+            os.rename(old_file_name, new_file_name)
 
 
 def get_fixed_filename(filename):
@@ -68,4 +71,4 @@ def get_fixed_filename(filename):
     return new_name
 
 
-# main()
+main()
