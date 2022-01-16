@@ -13,3 +13,13 @@ def main():
     pass
 
 
+def get_extension(filename):
+    """
+    Get extension from filename
+    :return: extension (type: str)
+    """
+
+
+
+if __name__ == '__main__':
+    main()
