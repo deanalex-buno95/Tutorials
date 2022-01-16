@@ -18,7 +18,9 @@ def get_extension(filename):
     Get extension from filename
     :return: extension (type: str)
     """
-
+    necessary_portion = filename[-5:]
+    excess, extension = necessary_portion.split(".")
+    return extension
 
 
 if __name__ == '__main__':
