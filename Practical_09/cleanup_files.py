@@ -32,8 +32,9 @@ def main():
             new_name = os.path.join(directory_name, get_fixed_filename(filename))
             os.rename(full_name, new_name)
         """
-        for i, filename in enumerate(filenames):
-            print(i, filename)
+        for filename in filenames:
+            fixed_filename = get_fixed_filename(filename)
+            print(f"{filename}          {fixed_filename}")
 
 
 def get_fixed_filename(filename):
@@ -42,9 +43,11 @@ def get_fixed_filename(filename):
     i = 0
     run = 0
     while run != SENTINEL:
-        if filename[i] == ".":  # convert extension to lowercase
+        if filename[i] == "." and filename[i+1:].lower() == "txt":  # convert extension to lowercase
             new_name += ("." + filename[i+1:].lower())
             run = SENTINEL
+        elif filename[i].isupper() and filename[i-1].isupper() and i != 0:  # deal with 2 uppercase letters
+            new_name += ("_" + filename[i])
         elif filename[i] == " " or filename[i] == "_":  # convert space to underscore or concatenate the underscore
             new_name += "_"
             if filename[i+1].islower():  # next char is a lowercase letter
@@ -62,17 +65,7 @@ def get_fixed_filename(filename):
         else:  # none of the special cases
             new_name += filename[i]
         i += 1
-    # new_name = filename.replace(".TXT", ".txt")
     return new_name
 
 
 # main()
-for text_file in ["Away In A Manger.txt",
-                  "SilentNight.txt",
-                  "O little town of bethlehem.TXT",
-                  "ItIsWell (oh my soul).txt",
-                  "Away_In_A_Manger.txt",
-                  "Silent_Night.txt",
-                  "O_Little_Town_Of_Bethlehem.txt",
-                  "It_Is_Well_(Oh_My_Soul).txt"]:
-    print(get_fixed_filename(text_file))
