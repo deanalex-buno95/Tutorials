@@ -1,7 +1,10 @@
 """
-CP1404/CP5632 Practical
-Demos of various os module examples
+Practical 9:
+Question 1
+os_demos.py
 """
+
+
 # import shutil
 import os
 
