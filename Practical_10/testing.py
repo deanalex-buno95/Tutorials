@@ -11,7 +11,14 @@ from Practical_06.car import Car
 
 def repeat_string(s, n):
     """Repeat string s, n times, with spaces in between."""
-    return s * n
+    repeated_string = ""
+    for i in range(n):
+        # add repeated string
+        repeated_string += s
+        # deal with cases where it is not the last repeated string
+        if i != n-1:
+            repeated_string += " "
+    return repeated_string
 
 
 def is_long_word(word, length=5):
@@ -36,7 +43,7 @@ def run_tests():
 
     # TODO: 1. fix the repeat_string function above so that it passes the failing test
     # Hint: "-".join(["yo", "yo"] -> "yo-yo"
-
+    assert repeat_string("RGG", 8) == "RGG RGG RGG RGG RGG RGG RGG RGG"
     # assert test with custom message,
     # used to see if Car's init method sets the odometer correctly
     # this should pass (no output)
