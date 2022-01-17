@@ -78,3 +78,15 @@ assert(is_long_word("YAKUZA", 6)) is True
 # and one more you decide (one that is valid!)
 # test this and watch the tests fail
 # then write the body of the function so that the tests pass
+
+
+def convert_string_to_sentence(string):
+    """
+    Convert a string to a complete sentence
+    """
+    pass
+
+
+assert convert_string_to_sentence("hello") == "Hello."
+assert convert_string_to_sentence("It is an ex parrot.") == "It is an ex parrot."
+assert convert_string_to_sentence("cheeseBurgers ARE Awesome") == "Cheeseburgers are awesome."
