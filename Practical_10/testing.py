@@ -84,7 +84,15 @@ def convert_string_to_sentence(string):
     """
     Convert a string to a complete sentence
     """
-    pass
+    sentence = ""
+    for i in range(len(string)):
+        if i == 0:
+            sentence += string[i].upper()
+        else:
+            sentence += string[i].lower()
+    if "." not in sentence:
+        sentence += "."
+    return sentence
 
 
 assert convert_string_to_sentence("hello") == "Hello."
