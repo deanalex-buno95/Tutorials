@@ -27,7 +27,8 @@ def main():
         if user_page == "":
             run = SENTINEL
         else:
-            print(user_page.summary())
+            print(BORDER)
+            print(wikipedia.summary(user_page))
         print(BORDER)
 
 
@@ -51,6 +52,8 @@ def get_search_page():
             print("Page number does not exist!")
         except wikipedia.DisambiguationError:  # page is a disambiguation page
             print("This is a disambiguation page! Please try again!")
+        except wikipedia.PageError:  # the page id does not work
+            print("Currently, this wikipedia page is unavailable! Please try again!")
         else:
             return user_page
 
@@ -69,3 +72,6 @@ def get_page_number():
         else:
             return page_number
 
+
+if __name__ == '__main__':
+    main()
