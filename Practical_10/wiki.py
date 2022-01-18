@@ -24,5 +24,7 @@ def main():
 
 def get_search_page():
     user_input = input("Search: ")
-    user_pages = wikipedia.search(user_input)
+    pages = wikipedia.search(user_input)
+    for page in pages:
+        print(page)
 
