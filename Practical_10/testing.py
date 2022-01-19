@@ -56,7 +56,7 @@ def run_tests():
     # You should test both of these
     test_car = Car(fuel=10)
     assert test_car.fuel == 10, "Fuel is not 10"
-    assert test_car.name == "Car", "This is not a regular car"
+    assert test_car.name == "Car", "This is supposed to be a regular car"
 
 
 run_tests()
