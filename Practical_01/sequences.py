@@ -11,6 +11,14 @@ SENTINEL = -1
 
 def main():
     """ Main function for the sequences menu. """
+    run = 0  # run while loop for the menu
+    while run != SENTINEL:
+        x = get_number("Input the first number: ")
+        y = get_number("Input the second number (larger than the first): ", x)
+
+
+def get_number(prompt, first_number=None):
+    """ Get number x or number y from the user. """
     pass
 
 
