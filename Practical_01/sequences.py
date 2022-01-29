@@ -12,23 +12,30 @@ def main():
     """ Main function for the sequences menu. """
     x = get_number("Input the first number: ")  # first number
     y = get_number("Input the second number (larger than the first): ", x)  # second number
+    print()
     run = 0  # run while loop for the menu
     while run != SENTINEL:
         print(MENU)
         option = get_option()
+        print()
         if option == 1:  # even numbers from x to y
+            print(f"Even numbers from {x} to {y}:")
             for i in range(x, y+1):
                 if not is_odd(i):
                     print(i)
         elif option == 2:  # odd numbers from x to y
+            print(f"Odd numbers from {x} to {y}:")
             for i in range(x, y+1):
                 if is_odd(i):
                     print(i)
         elif option == 3:  # squares from x to y
-            pass
+            print(f"Squares from {x} to {y}:")
+            for i in range(x, y+1):
+                print(get_squared_number(i))
         else:  # quit
             print("End of program…")
             run = SENTINEL
+        print()
 
 
 def get_number(prompt, first_number=None):
@@ -71,7 +78,7 @@ def is_odd(number):
 
 def get_squared_number(number):
     """ Get squared number from a number. """
-    pass
+    return number ** 2
 
 
 if __name__ == "__main__":
