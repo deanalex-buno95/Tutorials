@@ -10,7 +10,13 @@ import random
 VOWELS = "aeiou"
 CONSONANTS = "bcdfghjklmnpqrstvwxyz"
 
-word_format = "ccvcvvc"
+
+def get_word_format():
+    """ Get word format from user. """
+    pass
+
+
+word_format = get_word_format()
 word = ""
 for kind in word_format:
     if kind == "c":
