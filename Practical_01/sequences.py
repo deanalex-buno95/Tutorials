@@ -30,15 +30,25 @@ def get_number(prompt, first_number=None):
             if first_number is None:  # for getting the first number
                 return number
             else:  # for getting the second number
-                if number <= first_number:  # x <= y
+                if number <= first_number:  # y <= x
                     print("The second number must be larger than the first! Try again!")
-                else:
+                else:  # y > x
                     return number
 
 
 def get_option():
     """ Get menu option from the user. """
-    pass
+    run = 0  # run while loop for checking correct input
+    while run != SENTINEL:
+        try:  # input
+            option = int(input())
+        except ValueError:  # not an integer
+            print("Invalid value! Try again!")
+        else:
+            if option not in OPTIONS:  # option does not exist
+                print("This option does not exist! Try again!")
+            else:
+                return option
 
 
 if __name__ == "__main__":
