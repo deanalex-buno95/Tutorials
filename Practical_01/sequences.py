@@ -17,9 +17,13 @@ def main():
         print(MENU)
         option = get_option()
         if option == 1:  # even numbers from x to y
-            pass
+            for i in range(x, y+1):
+                if not is_odd(i):
+                    print(i)
         elif option == 2:  # odd numbers from x to y
-            pass
+            for i in range(x, y+1):
+                if is_odd(i):
+                    print(i)
         elif option == 3:  # squares from x to y
             pass
         else:  # quit
@@ -62,7 +66,7 @@ def get_option():
 
 def is_odd(number):
     """ Check if number is odd. """
-    pass
+    return number % 2 == 1
 
 
 if __name__ == "__main__":
