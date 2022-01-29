@@ -69,5 +69,10 @@ def is_odd(number):
     return number % 2 == 1
 
 
+def get_squared_number(number):
+    """ Get squared number from a number. """
+    pass
+
+
 if __name__ == "__main__":
     main()
