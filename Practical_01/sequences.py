@@ -60,5 +60,10 @@ def get_option():
                 return option
 
 
+def is_odd(number):
+    """ Check if number is odd. """
+    pass
+
+
 if __name__ == "__main__":
     main()
