@@ -15,6 +15,8 @@ def main():
     character_input_ascii_code = ord(character_input)  # get the respective ASCII code
     print(f"The ASCII code for {character_input} is {character_input_ascii_code}")
     ascii_code_input = get_ascii_code()  # get ASCII code
+    ascii_code_input_character = chr(ascii_code_input)  # get the respective character
+    print(f"The character for {ascii_code_input} is {ascii_code_input_character}")
 
 
 def get_character():
@@ -33,7 +35,7 @@ def get_ascii_code():
     run = 0
     while run != SENTINEL:
         try:  # input
-            ascii_code_input = int(f"Enter a number between {LOWER} and {UPPER}: ")
+            ascii_code_input = int(input(f"Enter a number between {LOWER} and {UPPER}: "))
         except ValueError:  # not an integer
             print("Invalid value! Try again!")
         else:
