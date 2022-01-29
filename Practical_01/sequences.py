@@ -16,6 +16,15 @@ def main():
     while run != SENTINEL:
         print(MENU)
         option = get_option()
+        if option == 1:  # even numbers from x to y
+            pass
+        elif option == 2:  # odd numbers from x to y
+            pass
+        elif option == 3:  # squares from x to y
+            pass
+        else:  # quit
+            print("End of program…")
+            run = SENTINEL
 
 
 def get_number(prompt, first_number=None):
