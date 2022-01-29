@@ -17,6 +17,8 @@ def main():
     ascii_code_input = get_ascii_code()  # get ASCII code
     ascii_code_input_character = chr(ascii_code_input)  # get the respective character
     print(f"The character for {ascii_code_input} is {ascii_code_input_character}")
+    for i in range(LOWER, UPPER+1):
+        print(f"{i:3} {chr(i):1}")
 
 
 def get_character():
