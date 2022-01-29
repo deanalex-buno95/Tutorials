@@ -14,7 +14,8 @@ def main():
     y = get_number("Input the second number (larger than the first): ", x)  # second number
     run = 0  # run while loop for the menu
     while run != SENTINEL:
-        pass
+        print(MENU)
+        option = get_option()
 
 
 def get_number(prompt, first_number=None):
@@ -33,6 +34,11 @@ def get_number(prompt, first_number=None):
                     print("The second number must be larger than the first! Try again!")
                 else:
                     return number
+
+
+def get_option():
+    """ Get menu option from the user. """
+    pass
 
 
 if __name__ == "__main__":
