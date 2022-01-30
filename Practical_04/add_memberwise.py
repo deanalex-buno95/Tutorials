@@ -1,17 +1,24 @@
 """
 Practice:
-add_memberwise
+add_memberwise.py
 """
 
 
 HEAD_INDEX = 0
-LIST_1 = []
-LIST_2 = []
 
 
 def main():
     """ Main program. """
-    pass
+    print("Program started")
+    list_i = [1, 2, 3]
+    list_ii = [4, 5, 6]
+    list_iii = [1, 2, 3]
+    list_iv = [1, 2, 3, 4]
+    test_list_alpha = add_memberwise(list_i, list_ii)
+    test_list_beta = add_memberwise(list_iii, list_iv)
+    print(f"add_memberwise({[1, 2, 3]}, {[4, 5, 6]})\n{test_list_alpha}")
+    print(f"add_memberwise({[1, 2, 3]}, {[1, 2, 3, 4]})\n{test_list_beta}")
+    print("Program ended")
 
 
 def add_memberwise(list_1, list_2):
