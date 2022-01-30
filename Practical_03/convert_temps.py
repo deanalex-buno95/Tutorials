@@ -23,14 +23,14 @@ def main():
             if i != NUMBER_OF_TEMPERATURES-1:
                 new_line += "\n"
             input_file.write(new_line)
-    converted_temperatures = []  # the initial values are unconverted
+    converted_temperatures = []  # the initial values are unconverted in °F, later in °C
     with open(INPUT_TEXT_FILE) as celcius_file:  # read input file
         lines = celcius_file.readlines()
         for line in lines:
             converted_temperatures.append(float(line.strip()))
-    for i in range(len(converted_temperatures)):  # convert temperature in °C to °F
-        celcius_temperature = converted_temperatures[i]
-        converted_temperatures[i] = convert_temperature(celcius_temperature, CELCIUS)
+    for i in range(len(converted_temperatures)):  # convert temperature in °F to °C
+        fahrenheit_temperature = converted_temperatures[i]
+        converted_temperatures[i] = convert_temperature(fahrenheit_temperature, FAHRENHEIT)
     with open(OUTPUT_TEXT_FILE, "w") as output_file:  # create output file
         for i in range(len(converted_temperatures)):
             new_line = str(converted_temperatures[i])
