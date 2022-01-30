@@ -21,7 +21,7 @@ def main():
                 print("Strings repeated: ", end="")
                 for i in range(len(repeated_strings)):
                     repeated_string = repeated_strings[i]
-                    if i != len(repeated_string)-1:
+                    if i != len(repeated_strings)-1:
                         repeated_string += ", "
                     print(repeated_string, end="")
             run = SENTINEL
